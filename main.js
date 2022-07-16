@@ -67,7 +67,7 @@ function removeGrid(){
    
  };
 
- function generateRandomColorRgb() {
+ function generateRandomColor() {
   const red = Math.floor(Math.random() * 256);
   const green = Math.floor(Math.random() * 256);
   const blue = Math.floor(Math.random() * 256);
@@ -102,7 +102,7 @@ Array.from(grids).forEach(function(item){
 };
 
 function setBlackColor(event){
-  event.target.style.backgroundColor = 'black'
+  event.target.style.backgroundColor = `black`
 }
 
 function removeBlackColor(){
