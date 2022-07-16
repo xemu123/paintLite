@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+}
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+#main-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#container {
+    margin-right: 100px;
+    display: grid;
+    width: 800px;
+    height: 800px;
+    grid-template-rows: repeat(var(--grid-rows),1fr);
+    grid-template-columns: repeat(var(--grid-cols),1fr);
+}
+  
+.grids {
+    padding: 1fr;
+    border: 1px solid #ddd;
+}
+
+  
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
